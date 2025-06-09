@@ -101,7 +101,7 @@
             <div class="logo">🏪 Toko ATK</div>
             <div class="user-info">
                 <span>Selamat datang, <strong><%= fullname %></strong></span>
-                <a href="tokoatk/logout.jsp" class="logout-btn" onclick="return confirm('Apakah Anda yakin ingin logout?')">
+                <a href="logout.jsp" class="logout-btn" onclick="return confirm('Apakah Anda yakin ingin logout?')">
                     Logout
                 </a>
             </div>
@@ -118,13 +118,13 @@
                 <div class="menu-card">
                     <h3>👥 Kelola User</h3>
                     <p>Tambah, edit, atau hapus data pengguna sistem</p>
-                    <a href="userlist.jsp">Lihat Daftar User</a>
+                    <a href="tokoatk/userlist.jsp">Lihat Daftar User</a>
                 </div>
                 
                 <div class="menu-card">
-                    <h3>📦 Kelola Produk</h3>
-                    <p>Manajemen produk ATK yang dijual</p>
-                    <a href="produk.jsp">Kelola Produk</a>
+                    <h3>📦 Kelola Barang</h3>
+                    <p>Manajemen data barang ATK yang dijual</p>
+                    <a href="tokoatk/baranglist.jsp">Kelola Barang</a>
                 </div>
                 
                 <div class="menu-card">
@@ -156,7 +156,7 @@
                 idleTime++;
                 if (idleTime >= 30) { // 30 menit
                     if(confirm('Sesi Anda akan berakhir karena tidak aktif. Klik OK untuk logout atau Cancel untuk melanjutkan.')) {
-                        window.location.href = 'tokoatk/logout.jsp';
+                        window.location.href = 'logout.jsp';
                     } else {
                         idleTime = 0;
                     }

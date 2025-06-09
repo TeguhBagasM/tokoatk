@@ -148,7 +148,7 @@
     <body>
         <div class="header">
             <h1>📦 Daftar Barang</h1>
-            <a href="home.jsp" class="back-btn">← Kembali ke Home</a>
+            <a href="../home.jsp" class="back-btn">← Kembali ke Home</a>
         </div>
 
         <div class="container">
