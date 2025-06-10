@@ -101,7 +101,7 @@
             <div class="logo">🏪 Toko ATK</div>
             <div class="user-info">
                 <span>Selamat datang, <strong><%= fullname %></strong></span>
-                <a href="logout.jsp" class="logout-btn" onclick="return confirm('Apakah Anda yakin ingin logout?')">
+                <a href="tokoatk/logout.jsp" class="logout-btn" onclick="return confirm('Apakah Anda yakin ingin logout?')">
                     Logout
                 </a>
             </div>
